@@ -1,0 +1,22 @@
+<?php
+  $riel = 2103942;
+  $kyat = 19092;
+  $krone = 109;
+  $lek = 9094;
+
+  echo "I have $riel riel, $kyat kyat, $krone krone and $lek lek.";
+
+  $riel_to_usd = $riel * 0.00025;
+  $kyat_to_usd = $kyat * 0.00054;
+  $krone_to_usd = $krone * 0.099;
+  $lek_to_usd = $lek * 0.0087;
+
+  echo "\nMy $riel riel are $riel_to_usd dollars, my $kyat kyat are $kyat_to_usd dollars, my $krone krones are $krone_to_usd dollars and my $lek lek are $lek_to_usd dollars.";
+
+  $final_amount = $riel_to_usd - 1 + $kyat_to_usd - 1 + $krone_to_usd - 1 + $lek_to_usd - 1;
+
+  echo "\nMy final amount of dollars after all that traveling is $final_amount.";
+
+  $rounded_dollars = $final_amount % 100000000000;
+
+  echo "\n$final_amount";
