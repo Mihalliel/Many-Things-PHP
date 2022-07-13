@@ -13,4 +13,3 @@ $i = floor($h);
 $j = $i - 47;
 
 echo $j;
-<php>
